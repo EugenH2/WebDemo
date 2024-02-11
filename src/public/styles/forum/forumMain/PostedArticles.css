@@ -1,0 +1,109 @@
+.topForumMainTiles {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    margin: 0 0 0 0;
+}
+
+.topInfoForumMainTiles {
+    margin: 0 var(--space-standard-margin-half) 0 var(--space-standard-margin-half);
+}
+
+.topInfoForumMainTiles h3 {
+    color: var(--color-blue-800);
+    margin: 0;
+}
+
+.topInfoForumMainTiles p {
+    margin: 0;
+    color: grey;
+    font-size: small;
+}
+
+.bottomForumMainTiles {
+    /*margin: 0 0 var(--space-standard-margin-half) 0;*/
+    margin: 0;
+}
+
+.bottomForumMainTiles a {
+    display: inline;
+    font-size: 0.875rem;
+}
+
+.postedImages {
+    display: block;
+    margin: 0.875rem 0;
+}
+
+.postedImages img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.ratingIconsForumMainTiles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* add or remove border top: */
+    padding-top: 10px;
+    /* 10px */
+    border-top: 1px solid lightgray;
+    word-break: keep-all;
+}
+
+.nmbrRatingIconsForumMainTiles {
+    display: flex;
+    align-items: center;
+}
+
+.sendRatingIconsForumMainTiles {
+    display: flex;
+    align-items: center;
+}
+
+.ratingIconForumMainTiles {
+    display: flex;
+    align-items: center;
+
+    padding: 0.25rem;
+
+    cursor: pointer;
+}
+
+.ratingIconForumMainTiles:hover,
+.ratingIconForumMainTiles:active {
+    /*color: var(--color-blue-800);*/
+    background-color: var(--color-blue-750);
+    /*var(--color-blue-500);   rgba(153, 9, 9, 0.9)*/
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+.ratingIconForumMainTiles:active {
+    background-color: var(--color-blue-700);
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+.ratingIconForumMainTiles .recommendsRatingIconForumMainTiles {
+    font-size: 1.1rem;
+}
+
+.ratingIconForumMainTiles .MuiSvgIcon-root {
+    font-size: 1.1rem;
+}
+
+.ratingIconForumMainTiles p {
+    margin: 0 0 0 0.3rem;
+
+    /* none-selectable text: */
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}

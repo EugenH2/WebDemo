@@ -1,0 +1,20 @@
+#contactsSidebarAside {
+    /*position: fixed;*/
+    flex: 0.2;
+    display: block; 
+    padding: 0 0.625rem;
+    margin: 0 0 0 0;
+    /*max-width: 16rem;*/
+    /*width: 15%;*/
+    height: 100%;
+    /*padding: var(--space-6) var(--space-7);*/
+   
+    background-color: var(--color-blue-700);
+    color: black;
+    /*overflow: hidden;*/
+
+    /* none-selectable text: */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

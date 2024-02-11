@@ -1,0 +1,28 @@
+.articlePostingDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.articlePostingDiv form {
+    flex: 1;
+    display: flex;
+}
+
+.articlePostingDiv input {
+    flex: 1;
+    outline-width: 0;
+    border: none;
+    outline: none;
+    background-color: rgba(29, 28, 28, 0.1);
+
+    
+    margin: 1.0rem;
+    padding: 0.46875rem 0.625rem;
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+.articlePostingDiv > form button {
+    display: none;
+}
+

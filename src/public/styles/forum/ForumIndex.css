@@ -1,0 +1,15 @@
+#main-header {
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+#forum {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+
+    /*flex-wrap: wrap;
+    align-content: flex-start;*/
+
+
+}
+

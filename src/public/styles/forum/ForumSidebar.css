@@ -1,0 +1,209 @@
+#forumSidebarAside {
+    position: sticky;
+    position: -webkit-sticky;
+    /*position: fixed;*/
+    /*flex: 0.25;*/
+    display: block;
+    padding: 0 0.625rem;
+    margin: 0 0 0 0;
+    /*max-width: 16rem;*/
+    /*width: 15%;*/
+    height: 100%;
+    /*100%;*/
+    /*padding: var(--space-6) var(--space-7);*/
+    top: 6.0rem;
+    left: 0;
+    background-color: var(--color-blue-700);
+    color: black;
+    overflow: hidden;
+    z-index: 6;
+
+    /* none-selectable text: */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.forumSidebarIcons {
+    display: flex;
+    align-items: center;
+    padding: var(--space-1) var(--space-7);
+    cursor: pointer;
+}
+
+.forumSidebarIcons:hover {
+    /*color: var(--color-blue-800);*/
+    background-color: var(--color-blue-750);
+    /*var(--color-blue-500);   rgba(153, 9, 9, 0.9)*/
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+.forumSidebarIcons:active {
+    background-color: var(--color-blue-700);
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+
+/*.forumSidebarIcons--active .MuiSvgIcon-root {
+    /*color: var(--color-blue-800);
+    border-bottom: 4px solid var(--color-blue-800);*/
+/*font-size: xx-large; */
+/*}*/
+
+
+.forumSidebarIcons h4 {
+    margin-left: 0.8rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+#forumSidebarSearchDiv {
+    margin: var(--space-4) 0 var(--space-3) var(--space-7);
+    padding: 0.20rem var(--space-1);
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+    max-width: 14rem;
+
+    background-color: white;
+    cursor: default;
+}
+
+/*#forumSidebarSearchDiv:hover, #forumSidebarSearchDiv:active {
+    background-color: var(--color-blue-700);
+}*/
+
+#forumSidebarSearchInput {
+    border: none;
+    background-color: white;
+    outline-width: 0;
+    max-width: 11.25rem;
+    outline: none;
+
+    min-width: 0;
+}
+
+.dropdown-content {
+    /*display: none;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 0 2rem 1.7rem;
+    padding: 0.0rem 0;
+
+    background-color: var(--color-background-black-darker);
+    color: var(--color-white-0);
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    align-items: center;
+    overflow: auto;
+    z-index: 9;
+
+    /* none-selectable text: */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.dropdown-content .forumSidebarIcons {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    width: 100%;
+    
+    align-items: center;
+    
+}
+
+.dropdown-content .forumSidebarIcons h4 {
+    margin: 1.0rem 0;
+}
+
+.dropdown-content .forumSidebarIcons:hover {
+    /*color: var(--color-blue-800);*/
+    background-color: rgb(16, 7, 7);
+    color: var(--color-green-700); /*var(--color-background); rgb(232, 195, 28);*/
+    
+    /*var(--color-blue-500);   rgba(153, 9, 9, 0.9)*/
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+.dropdown-content .forumSidebarIcons:active {
+    background-color: rgb(16, 7, 7);
+    color: var(--color-background);
+    border-radius: var(--border-radius-forumSidebarIconsHover);
+}
+
+
+
+@media (max-width: 48rem) {
+    #forum {
+        flex-wrap: wrap;
+    }
+    
+    #forumSidebarAside {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        flex-basis: 100%;
+        padding-top: 0.5rem; 
+        word-break:  keep-all;  
+        top: 6.0rem;    
+    }
+
+    #forumSidebarAside nav{
+        display: flex;
+        flex-direction: row; 
+        overflow: auto; 
+    }
+    
+    #forumSidebarSearchDiv {
+        margin: var(--space-4) 0.40rem var(--space-3) 0.40rem;
+        padding: 0rem var(--space-1);
+        max-width: 10rem;
+    }
+
+    .forumSidebarIcons {      
+        padding: 0.20rem var(--space-3);
+        margin: 0;
+        /*font-size: small; */
+        /*min-height: 0;
+        min-width: 0;*/
+    }
+
+    .forumSidebarIcons h4 {
+        margin-left: 0.4rem;
+    }
+
+    .forumMainTiles.articlePostingDiv{
+        padding: var(--space-standard-margin-half) var(--space-standard-margin);
+    }
+
+    #dropdownProfile {
+        /*display: none;*/
+        position: fixed;
+        /*bottom: 0;*/
+    
+        max-width: 18rem;
+        
+        /*margin: auto 50%;*/
+        margin: 0 auto; /* Only centers horizontally not vertically! */
+        left: 0;
+        right: 0;
+        top: 10.1rem;
+        z-index: 9;
+        overflow: auto;      
+    }
+
+    /*.MuiAvatar-root.css-2s90m6-MuiAvatar-root{
+        position: unset;
+    }*/
+}
+
+/*@media (min-width: 76.5rem) {
+    
+}*/
